@@ -1,0 +1,2 @@
+{ "rewrites": [{ "source": "/(.*)", "destination": "/index.html" }] }
+Created vercel.json with rewrite rules to handle client-side routing in a Vite React SPA.

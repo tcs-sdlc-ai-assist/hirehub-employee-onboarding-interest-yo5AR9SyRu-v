@@ -1,0 +1,5 @@
+{
+  "action": "write_file",
+  "file": "src/utils/storage.js",
+  "content": "import { useRef } from 'react';\n\n/**\n * Saves a value to localStorage.\n * @param {string} key - The storage key.\n * @param {*} value - The value to store. If undefined, the key is removed.\n */\nexport function setItem(key, value) {\n  if (value === undefined) {\n    localStorage.removeItem(key);\n  } else {\n    localStorage.setItem(key, JSON.stringify(value));\n  }\n}\n\n/**\n * Retrieves a value from localStorage.\n * @param {string} key - The storage key.\n * @returns {*} The parsed value or undefined if not found.\n */\nexport function getItem(key) {\n  const json = localStorage.getItem(key);\n  return json ? JSON.parse(json) : undefined;\n}\n\n/**\n * Removes a key from localStorage.\n * @param {string} key - The storage key.\n */\nexport function removeItem(key) {\n  localStorage.removeItem(key);\n}\n\n/**\n * Clears all entries from localStorage.\n */\nexport function clearStorage() {\n  localStorage.clear();\n}"
+}

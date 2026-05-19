@@ -1,0 +1,59 @@
+:root {
+  --color-primary: #0066ff;
+  --color-secondary: #ff6600;
+  --font-primary: 'Inter', sans-serif;
+  --font-size-base: 1rem;
+  --spacing-unit: 1rem;
+}
+
+html,
+body,
+#root {
+  height: 100%;
+  margin: 0;
+  padding: 0;
+  font-family: var(--font-primary);
+  background-color: #f9f9f9;
+  color: #333;
+}
+
+a {
+  color: var(--color-primary);
+  text-decoration: none;
+}
+
+a:hover {
+  text-decoration: underline;
+}
+
+button {
+  font-family: inherit;
+  cursor: pointer;
+}
+
+.container {
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 0 var(--spacing-unit);
+}
+
+header {
+  background-color: var(--color-primary);
+  color: white;
+  padding: var(--spacing-unit);
+  text-align: center;
+}
+
+main {
+  padding: var(--spacing-unit);
+}
+
+footer {
+  background-color: #eee;
+  color: #666;
+  text-align: center;
+  padding: var(--spacing-unit);
+  margin-top: var(--spacing-unit);
+}
+
+/* Created src/App.css */Created src/App.css
